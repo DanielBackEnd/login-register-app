@@ -1,5 +1,6 @@
 import asyncHandler from 'express-async-handler';
 import User from '../models/userModel.js';
+import createToken from '../utils/jsonWebToken.js';
 
 const loginUser = asyncHandler(async (req, res) => {
   res.status(200).json({ status: 'User logged' });
@@ -22,6 +23,7 @@ const registerUser = asyncHandler(async (req, res) => {
   });
 
   if (user) {
+    createToken(res, user._id);
     res.status(201).json({
       _id: user._id,
       name: user.name,
