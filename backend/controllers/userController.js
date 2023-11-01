@@ -3,7 +3,21 @@ import User from '../models/userModel.js';
 import createToken from '../utils/jsonWebToken.js';
 
 const loginUser = asyncHandler(async (req, res) => {
-  res.status(200).json({ status: 'User logged' });
+  const { email, password } = req.body;
+
+  const user = await User.findOne({ email });
+
+  if (user && (await user.matchPassword(password))) {
+    createToken(res, user._id);
+    res.status(201).json({
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+    });
+  } else {
+    res.status(401);
+    throw new Error('Invalid data, user has not been logged');
+  }
 });
 
 const registerUser = asyncHandler(async (req, res) => {
