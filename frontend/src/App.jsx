@@ -1,9 +1,8 @@
-import Signup from './pages/Signup';
-
+import { Outlet } from 'react-router-dom';
 const App = () => {
   return (
     <>
-      <Signup />
+      <Outlet />
     </>
   );
 };

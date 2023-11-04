@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Signup = () => {
   return (
     <>
@@ -13,7 +15,7 @@ const Signup = () => {
           <button type='submit'>Sing in</button>
         </form>
         <p className='member-link'>
-          Don’t have an account yet? <a href='#'>Register</a>
+          Don’t have an account yet? <Link to={`/`}>Register</Link>
         </p>
       </div>
     </>
