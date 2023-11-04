@@ -7,6 +7,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+#root {
+  width: 100vw;
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -73,4 +77,73 @@ button {
 
 .member-link a {
   color: rgba(45, 156, 219, 1);
+}
+
+.desc-title {
+  font-size: 36px;
+  text-align: center;
+  line-height: 68px;
+}
+
+.desc-subtitle {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.desc-wrapper {
+  padding: 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.description {
+  border-bottom: 1px solid rgba(211, 211, 211, 1);
+  display: flex;
+  padding: 30px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info span {
+  color: rgba(130, 130, 130, 1);
+  font-size: 13px;
+}
+
+.edit-btn a {
+  color: rgba(130, 130, 130, 1);
+  border: 1px solid rgba(130, 130, 130, 1);
+  border-radius: 12px;
+  padding: 10px 32px;
+}
+
+.name {
+  border-bottom: 1px solid rgba(211, 211, 211, 1);
+}
+
+.name,
+.email {
+  font-size: 13px;
+  color: rgba(189, 189, 189, 1);
+  padding: 30px 50px;
+  display: flex;
+}
+
+.name span,
+.email span {
+  display: block;
+  width: 30%;
+}
+
+.user-data {
+  width: 70%;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
 }
