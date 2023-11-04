@@ -1,7 +1,7 @@
 const Signup = () => {
   return (
     <>
-      <div className='wrapper'>
+      <div className='wrapper sign-wrapper'>
         <h3 className='title'>
           Join thousands of learners from around the world
         </h3>

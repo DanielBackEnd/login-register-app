@@ -1,7 +1,7 @@
 const Signup = () => {
   return (
     <>
-      <div className='wrapper'>
+      <div className='wrapper sign-wrapper'>
         <h3 className='title'>Login</h3>
         <p className='subtitle'>
           Master web development by making real-life projects. There are

@@ -35,6 +35,12 @@ a {
   margin: 20px;
 }
 
+.sign-wrapper {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .title {
   max-width: 30ch;
   font-size: 18px;
