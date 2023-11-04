@@ -1,9 +1,9 @@
-import Signup from './pages/Signup';
+import Signin from './pages/Signin';
 
 const App = () => {
   return (
     <>
-      <Signup />
+      <Signin />
     </>
   );
 };
