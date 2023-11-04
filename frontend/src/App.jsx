@@ -1,7 +1,9 @@
+import Signup from './pages/Signup';
+
 const App = () => {
   return (
     <>
-      <h1>login-register-app</h1>
+      <Signup />
     </>
   );
 };
