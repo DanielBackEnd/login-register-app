@@ -1,6 +1,9 @@
 const Profil = () => {
   return (
     <>
+      <div className='logout-btn'>
+        <a href='#'>Logout</a>
+      </div>
       <h1 className='desc-title'>Personal info</h1>
       <p className='desc-subtitle'>Basic info, like your name and email</p>
       <div className='wrapper desc-wrapper'>

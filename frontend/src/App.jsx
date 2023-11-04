@@ -1,9 +1,9 @@
-import Profil from './pages/Profil';
+import EditUserData from './pages/EditUserData';
 
 const App = () => {
   return (
     <>
-      <Profil />
+      <EditUserData />
     </>
   );
 };
