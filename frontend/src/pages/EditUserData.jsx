@@ -29,7 +29,7 @@ const EditUserData = () => {
         name,
         email,
       }).unwrap();
-      dispatch(setCredentials(...res));
+      dispatch(setCredentials({ ...response }));
       toast.success('Profile updated!');
       navigate('/profile');
     } catch (error) {
