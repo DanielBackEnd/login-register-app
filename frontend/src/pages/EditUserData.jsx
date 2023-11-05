@@ -1,9 +1,6 @@
 const EditUserData = () => {
   return (
     <>
-      <div className='logout-btn'>
-        <a href='#'>Logout</a>
-      </div>
       <div className='wrapper desc-wrapper'>
         <div className='description'>
           <div className='info'>
