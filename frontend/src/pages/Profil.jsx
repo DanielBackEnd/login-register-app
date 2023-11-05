@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useLogoutMutation } from '../slices/userApiSlice';
 import { logout } from '../slices/authSlice';
 
@@ -35,7 +35,7 @@ const Profil = () => {
             <span>Some info may be visible to other people</span>
           </div>
           <div className='edit-btn'>
-            <a href='#'>Edit</a>
+            <Link to='/edit'>Edit</Link>
           </div>
         </div>
         <div className='name'>

@@ -13,6 +13,7 @@ import './index.css';
 import Signup from './pages/Signup.jsx';
 import Signin from './pages/Signin.jsx';
 import Profil from './pages/Profil.jsx';
+import EditUserData from './pages/EditUserData.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route index={true} path='/' element={<Signup />} />
       <Route path='/login' element={<Signin />} />
       <Route path='/profile' element={<Profil />} />
+      <Route path='/edit' element={<EditUserData />} />
     </Route>
   )
 );
