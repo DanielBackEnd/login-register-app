@@ -40,11 +40,11 @@ const Profil = () => {
         </div>
         <div className='name'>
           <span>NAME</span>
-          <span className='user-data'>{userInfo.name}</span>
+          <span className='user-data'>{userInfo && userInfo.name}</span>
         </div>
         <div className='email'>
           <span>EMAIL</span>
-          <span className='user-data'>{userInfo.email}</span>
+          <span className='user-data'>{userInfo && userInfo.email}</span>
         </div>
       </div>
     </>
