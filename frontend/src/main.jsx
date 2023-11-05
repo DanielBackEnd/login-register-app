@@ -21,6 +21,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<App />}>
       <Route index={true} path='/' element={<Signup />} />
       <Route path='/login' element={<Signin />} />
+      /** private routes below */
       <Route path='' element={<PrivateRoute />}>
         <Route path='/profile' element={<Profil />} />
         <Route path='/edit' element={<EditUserData />} />
